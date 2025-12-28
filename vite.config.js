@@ -1,25 +1,7 @@
-{
-  "name": "afriglobal-website",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "lucide-react": "^0.263.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
-  }
-}
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
